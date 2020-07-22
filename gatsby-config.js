@@ -19,11 +19,11 @@ module.exports = {
         apiBase: `jsonapi`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-graphql-codegen`,
-    //   options: {
-    //     fileName: `./src/typings/graphql-types.ts`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-graphql-codegen`,
+      options: {
+        fileName: `./src/typings/graphql-types.ts`,
+      },
+    },
   ],
 }
