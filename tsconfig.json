@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "./src/typings"
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
+  }
+}

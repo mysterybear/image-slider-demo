@@ -1,0 +1,53 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.root .current {
+  position: absolute;
+  width: 100%;
+}
+
+.current * {
+  pointer-events: none;
+}
+
+.next,
+.prev {
+  display: none;
+  top: calc(50% - theme("spacing.6"));
+  position: absolute;
+  color: white;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.next svg,
+.prev svg {
+  @apply w-16 h-auto;
+}
+
+.next {
+  right: 0;
+  transform: scale(-1);
+}
+
+.prev {
+  left: 0;
+}
+
+@screen sm {
+  .prev,
+  .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
